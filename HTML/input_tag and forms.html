@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forms </title>
+</head>
+
+<body>
+    <h1>NET 2 Form </h1>
+
+    <form action="post"> <!-- server type post etc upcomming -->
+
+        <!-- using div for spaces and make spection  -->
+        
+        <div>
+            <label for="Username">First name </label>
+            <input type="text" id="Username" name="First Name " placeholder="Enter Your name ">
+                    <!-- -->
+
+        </div>
+
+        <div>
+            <label for="male">Male </label>
+            <input type="radio" id="male" name="Gender ">
+            <label for="female">Female </label>
+            <input type="radio" id="female" name="Gender ">
+        </div>
+
+        <div>
+            <!-- textarea is text box -->
+
+            <label for="comments">Write Your Review </label>
+            <br>
+            <textarea name="Comments" id="comments" cols="30" rows="10" placeholder="Write Yours Reviews"></textarea>
+
+        </div>
+
+        <div>
+            <!-- here select tag use for mutiple options -->
+            <select name="Lange select" id="">
+                <option value="name">C++</option>
+                <option value="name">Python</option>
+                <option value="name">Java</option>
+            </select>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
+<!--The "type" attribute specifies the type of input control (e.g., text, password, checkbox).
+
+The "name" attribute is used for identifying the control, especially when the data is sent to the server.
+
+The "value" attribute sets a default value for the control, which the user can overwrite.-->
