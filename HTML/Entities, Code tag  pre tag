@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    this is para tag &lt; p &gt; &lt;/p &gt;
+
+    &copy
+
+    <pre> ther is div <div>
+        there is spacee         here     
+    </pre>
+    
+
+    <p>there i want to add sapcee s    sds   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sadasd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsd</p>
+
+
+    <code>#inclideusing namesaoce std int main </code>
+
+<pre> <code> Here we write 
+ muiltiline code 
+ </code></pre>
+
+</body>
+
+</html>
