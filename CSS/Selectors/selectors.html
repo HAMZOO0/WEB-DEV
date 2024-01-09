@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        /*Element Selector*/
+        div {
+            background-color: rgb(23, 175, 180);
+        }
+
+        /*Class Selector*/
+        .red {
+            background-color: red;
+        }
+
+        /*ID Selector */
+        #Green {
+            background-color: green;
+        }
+
+        /*Child Selector */
+        span>p {
+            /*its mean p inside span directly inside, not child of child like span -> div ->p no | span -> p yes */
+            color: aqua;
+            background-color: black;
+        }
+
+        /*Descendant Selector */
+        span p {
+            /*its mean p inside span directly  inside or not  just apply properties */
+            color: aqua;
+            background-color: black;
+        }
+
+        /*Firsr-child-selector*/
+        article:first-child {
+            /*Where artcal is 1st child of its parent then this propertires will apply*/
+            color: rgb(255, 14, 187);
+        }
+
+        /*Universal Selector*/
+        /*Here we  select all Elements*/
+        * {
+            color: blue;
+        }
+
+        /*Pseudo Selector  .. more on secound selecter file */
+        a:visited {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>i am div </div>
+
+    <div class="red">i am div </div>
+
+    <div id="Green" class="red">i am div </div>
+
+
+    <span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+    </span>
+
+    <span>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dolore commodi labore non. Ullam ducimus
+                molestiae accusamus deserunt sapiente facere cumque consectetur, temporibus error perspiciatis beatae
+                voluptates, nemo hic quidem?</p>
+        </div>
+
+    </span>
+
+    <a href="https://www.youtube.com/">Google</a>
+
+    <main>
+        <article>1st child of div</article>
+        <article>2nd child of div</article>
+    </main>
+
+</body>
+
+</html>
