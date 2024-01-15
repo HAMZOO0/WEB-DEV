@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+--------------------- ---display: inline;
+         use to makae box elements to inline elemnts . 
+        !!! 
+        when we use inline , it make box element into  inline but we cant change margin and pppading on upper side + we can't change wdith and height so we need to use 
+
+------------------- --------inline-block
+
+
+
+---------------------------- display: none; ----------------   visibility: hidden;
+
+it use to remove the hole elemnt wagood he khtm 
+but when we use             visibility: hidden when box willl hide not remove 
+
+
+
+    
+    -->
+    <style>
+        *{
+            padding: 0;
+        }
+        .box {
+            display: inline-block;
+            border: 4px solid red;
+            padding: 50px;
+            
+        }
+        .box22 {
+            /* display:none; */
+            visibility: hidden;
+            border: 4px solid red;
+            padding: 50px;
+            
+        }
+        
+        /* span{
+            border: 2px solid green;
+
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+    <div class="box22">Lorem ipsum dolor sit amet.</div>
+
+    <span>Lorem ipsum dolospan</span>
+    <span>Lorem ipsum dolor sit amet consemolestias! </span>
+
+</body>
+</html>

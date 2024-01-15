@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+Overflow means inner content will overflow from  main contaner .
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+overflow auto ==> use for ; if content will overflow then automatically we use scroll bar else  not 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+overflow : scroll ==> we must use scroll bar 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+            white-space:nowrap ;
+use to set all content horizontally
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+            text-overflow:ellipsis;
+use for add ... 3 dots at end of overflowwd text if we also use  white-space: nowrap; then it work
+-->
+
+    <style>
+        .box1 {
+            width: 50vw;
+            height: 10vh;
+            border: 2px solid green;
+            overflow: auto;
+            /* overflow x | y ==> hidden auto  */
+
+        }
+
+        .box2 {
+            width: 50vw;
+            height: 10vh;
+            border: 2px solid green;
+            overflow: hidden;
+
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis error similique odio voluptates? Ab
+        dignissimos beatae cumque aspernatur non ea veritatis error ratione sapiente, molestias ipsum est blanditiis,
+        dolores saepe.
+    </div>
+
+    <br><br>
+    <div class="box2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis error similique odio voluptates? Ab
+        dignissimos beatae cumque aspernatur non ea veritatis error ratione sapiente, molestias ipsum est blanditiis,
+        dolores saepe.
+    </div>
+
+</body>
+
+</html>

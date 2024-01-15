@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  
+            box-shadow: h-offset(height) v-offset(width) blur speard color ;
+
+            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+              text-shadow: h-offset(height) v-offset(width) blur   color ;
+
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+              outline outside , border inside 
+
+
+    */
+
+        .box {
+            border: 2px solid rgb(19, 96, 118);
+            padding: 10px;
+
+            box-shadow: 3px 0px 5px 2px #13bdb6;
+
+
+        }
+
+        .box:hover {
+            box-shadow: 10px 5px 30px;
+        }
+
+        h2 {
+            text-shadow:2px 12px 12px blue;
+        }
+
+        h3{
+            outline: 2px solid red  ;
+            outline-offset: 10px;
+
+            border: 2px solid green;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        Box Hon ma
+    </div>
+
+    <h2>text shaodw pr kam krna ha </h2>
+
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, doloremque.</h3>
+</body>
+
+</html>

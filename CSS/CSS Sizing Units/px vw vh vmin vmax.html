@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+
+    <!--
+        there are some units 
+        px 
+        vw / vh(view port width/height ) : how much screen look in your device means 100vw = 100% sceen cover 
+    
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+     We can't change the weigth/ height of inline 
+        elements
+ 
+ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ computer vmin ==> Height 
+ phone vmin ==>   width  
+
+  computer vmax ==> width
+ phone vmax  ==>   height 
+
+ these size are also like vh vw 
+
+ for this device these 4 units are same :
+  /* width: 100vw; */
+            width:  100vmax;
+            /* height: 100vmin; */
+            height: 100vh;
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+        /* When we  do margin auto on box elemnts then it go to center and we also add some wdith  */
+
+
+    
+    -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid red;
+            background-color: black;
+            width: 50vw;
+            height: 10v;
+            margin: auto;
+            /* When we  do margin auto on box elemnts then it go to center and we also add some wdith  */
+        }
+
+        .main_box {
+            border: 2px solid rgb(17, 48, 8);
+            background-color: rgb(147, 112, 112);
+            width: 50vw;
+            margin: 10px auto;
+            /*10px =  up down | left right=  auto */
+        }
+
+        footer {
+            border: 2px solid rgb(54, 0, 250);
+            background-color: rgb(255, 255, 237);
+            /* width: 100vw; */
+            width: 100vmax;
+            /* height: 100vmin; */
+            height: 100vh;
+
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">Home About Contact Products </div>
+
+    <div class="main_box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sequi, consectetur,
+        repudiandae quos neque perspiciatis iste excepturi vel aspernatur dicta minus eum ducimus in possimus quae
+        deserunt quisquam eveniet repellendus.
+    </div>
+
+    <footer>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sed accusamus nesciunt quis, eaque animi
+        minus veritatis sapiente amet nostrum velit fugit? Harum sequi laborum vel doloribus nihil animi accusamus?
+    </footer>
+</body>
+
+</html>

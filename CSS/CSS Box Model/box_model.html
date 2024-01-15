@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model </title>
+
+    <style>
+        /*Here we reset the maegen padding of all elements */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            color: red;
+        }
+
+        .box1 {
+            background-color: aqua;
+            padding: 12px;
+            margin: 35px;
+            border: 5px solid red;
+            height: 50px;
+            box-sizing: border-box;
+            /* Borader box : when we not apply then the total height/weidth of actual content wil be  50px but when we apply this then total height/weidth will be  --> border size + padding = 50px   */
+        }
+
+        .box2 {
+            background-color: cornflowerblue;
+            padding: 12px;
+            margin: 25px;
+            border: 5px solid GREEN;
+            height: 50px;
+            box-sizing: border-box;
+        }
+
+        /*Margin Collapse : then we add two box and when  margin of two boxes will overlape  then max margin of any box will be apply this concept  is callled */
+    </style>
+
+</head>
+`
+<body>
+    <div class="box box1 ">Here is Box </div>
+
+    <div class="box  box2 ">Here is Box </div>
+
+
+</body>
+
+</html>

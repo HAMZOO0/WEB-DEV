@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Here which propertie will apply 1st this will decide by cascade algorith 
+
+Casecade Algorith :
+1 : position/order will matter 
+
+2 : Spacificity : main_tag -> class selector -> Attribute selector -> id -> inline_style_css -> important flag
+ inline style  and  important flag have hightest priority 
+
+3 : !important flag hightest priority
+
+-------------------------------------------
+There is also  a value for this :
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+universal = 0 
+element selector =1 
+class = 10 
+attribute =10 
+id =100 
+inline style = 1000
+important flag = 10000
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+    <style>
+        #divhon {
+            background-color: black;
+        }
+
+        /* div {
+            background-color: aqua !important;
+        } */
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            /* div = 1 + .id 10 = 11  */
+            background-color: blue;
+        }
+
+        [game-s="11"] {
+            background-color: fuchsia;
+        }
+
+        /* a.harry.rohan-class.ckass[href]:host value = 41*/
+    </style>
+</head>
+
+<body>
+
+    <div id="divhon" class="red green blue " game-s="11">
+        This is div
+    </div>
+</body>
+
+</html>

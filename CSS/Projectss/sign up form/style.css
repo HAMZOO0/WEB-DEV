@@ -1,0 +1,53 @@
+body {
+    background-color: #222121f2;
+}
+
+h2 {
+    color: rgba(201, 190, 190, 0.534);
+    /* display: inline-block; */
+    /* border: 2px solid red; */
+    width:90px;
+    margin: auto ;
+    margin-bottom: 20px;
+
+} 
+
+form{ 
+     border: 2px solid rgba(117, 115, 115, 0.473);
+     width:200px;
+     margin: auto ;
+}
+#_name {
+
+    color: white;
+    background-color: #222121f2;
+    margin: 10px;
+
+
+}
+
+#_username {
+    color: white;
+    background-color: #222121f2;
+    margin: 10px;
+
+}
+
+#_email{
+    color: white;
+    background-color: #222121f2;
+    margin: 10px;
+
+}
+
+#_password{
+    color: white;
+    background-color: #222121f2;
+    margin: 10px;  
+}
+
+#_Confirm_pass{
+    color: white;
+    background-color: #222121f2;
+    margin: 10px;  
+}
