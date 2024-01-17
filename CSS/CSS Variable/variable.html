@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        /* Here we create global variables , in side root and use (--) 
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+
+        check li:first-child for local varbale 
+
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@22
+The opacity property specifies the opacity/transparency of an element.
+
+        */
+        :root {
+            --primary_color: rgb(188, 200, 108);
+
+            --secondary_color: rgba(169, 169, 112, 0.454);
+
+            --apni_padding: 5px
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--primary_color, blue);
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        ul li {
+            padding: var(--apni_padding);
+            padding-left: 35px;
+            opacity: 0.4;
+        }
+
+        li:first-child {
+            /* Here  i am just copy the gloabal variable and past here  , now it  became a Local variable */
+            --primary_color: rgb(90, 0, 0);
+            background-color: var(--primary_color, blue);
+            /* when varbale not found then we use blue here 
+             background-color: var(--primary_color , blue ); */
+        }
+
+        .paragraph {
+            background-color: var(--secondary_color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+
+        </ul>
+    </div>
+
+    <div class="paragraph">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt rem dignissimos quod sit repellat tempore
+            quos, nisi nesciunt impedit natus commodi, praesentium sed explicabo accusantium? Exercitationem, earum? Ut,
+            consectetur consequuntur.</p>
+    </div>
+</body>
+
+</html>
