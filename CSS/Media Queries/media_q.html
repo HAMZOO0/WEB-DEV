@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- media rule => media querie(new name ) -->
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+
+        /* Meida type => speech(speech devices  , printer , all ) 
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@22
+
+        @media not | only media type and (expressions)
+        { CSS-code} ; 
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+         
+         @media only screen and (min-width:1000px)
+
+         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+
+         this is use for responsive design so check box example here 
+          */
+        @media only screen and (max-width:1000px) {
+            body {
+                background-color: brown;
+
+                .box {
+                    display: inline;
+                }
+            }
+        }
+
+        @media only screen and (orientation:landscape)
+      {
+        body{
+            background-color: rgba(0, 0, 0, 0.482);
+        }
+      }  
+
+        .box {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">Lorem ipsum dolor sit amet.</div>
+    <div class="box box2">Lorem ipsum dolor sit amet.</div>
+    <div class="box box3">Lorem ipsum dolor sit amet.</div>
+</body>
+
+</html>
