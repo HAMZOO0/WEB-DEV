@@ -1,0 +1,29 @@
+:root{
+    --bodybackcolor:bisque;
+    --nav_backcolor:black;
+    --nav_color:green;
+
+
+}
+
+body
+{
+    background-color: var(--bodybackcolor);
+}
+nav{ 
+    background-color: var(--nav_backcolor);
+    color: var(--nav_color);
+}
+ul
+{
+    list-style: none;    
+}
+li{
+    display: inline;
+    padding-right:40px ;
+
+}
+.LOGO{
+    font-size:px;
+
+}
