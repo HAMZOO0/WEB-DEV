@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Flaot use to allow some content on side of ; like in picture we use then we add pararagraph right side 
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                    display: flow-root;
+          use to  overflow picture put inside the border (basically border  extend its size according to img )
+        
+     -->
+    <style>
+        img {
+            float: left;
+        }
+
+        .card_main {
+            border: 2px solid red;
+            display: flow-root;
+        }
+
+        .card {
+            border: 2px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card_main">
+        <img src="babar.PNG" width="30%">
+        <div class="card1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem at consequuntur,
+            quidem fugiat laborum perferendis possimus ipsum dolor aspernatur, nisi aliquam. Suscipit accusamus, quas
+            dolor nemo quo itaque amet?</div>
+        <div class="card card2 ">card 2</div>
+        <div class="card card3 ">card 3</div>
+        <div class="card card4 ">card 4</div>
+    </div>
+</body>
+
+</html>
