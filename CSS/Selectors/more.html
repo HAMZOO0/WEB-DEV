@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes * {
+            /* universal selector for specific tag */
+            color: gray;
+            border: 1px solid black;
+
+        }
+
+        .box:first-child {
+            /* this selector act on where the class have box name and first tag */
+            background-color: aqua;
+        }
+
+        /* .box::first-line{ 
+            first line selector */
+        .box:first-child::first-line {
+            color: yellow;
+        }
+
+        .box:first-child::first-letter {
+            /* Selector for first letter  */
+            font-size: 30px;
+        }
+
+        [data-color="primary"] {
+            /*  .box , body [data-color = "primary"] 
+        This is way to select multiple tag this is not for attribute this is for all selectors  
+        
+             Attribute selector */
+            background-color: bisque;
+            margin-top: 10px;
+        }
+
+        .boxes:nth-child(odd) {
+            color: rgb(10, 229, 14);
+        }
+
+
+        /* .boxes:nth-last-child() {
+
+            */
+
+
+        /* Here we using a css to add content dynamically  */
+        .boxes::before {
+            content: "This  is before ";
+            color: red;
+        }
+
+        .boxes::after {
+            content: "this is after  ";
+        }
+
+
+        /* when we select text the color will red 
+         */
+        ::selection{
+            /* WE also add some specific tag but here we just use  ::selection which mean we apply this property on whole page 
+ */
+            color: red;
+            background-color: black;
+        }
+
+            input::placeholder{
+                color: rgb(147, 21, 202);
+                /* background-color: brown; */
+            }
+
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ilabore dicta enim ipsum eveniet quod sit saepe vitae. Deleniti, qui voluptate!
+            Accusantium ut velit repellat rerum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quia
+            repellendus nemo repellat facere laudantium, aliquid sapiente ex esse mollitia blanditiis magnam neque cum
+            assumenda harum consequatur rerum sed quam.psum dolor sit amet consectetur adipisicing elit. Reiciendis,
+            reprehenderit.</div>
+
+        <div class="box">Lorem ipsum dolor sit amet.</div>
+
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+            consectetur. Totam,
+            numquam explicabo ?</div>
+    </div>
+
+    <input type="text" placeholder="type a name">
+</body>
+
+</html>
