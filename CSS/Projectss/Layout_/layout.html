@@ -1,0 +1,46 @@
+<!-- Learning 
+
+When we use postion sticky on child it will not applyed so  we need to applyed on parent element
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+The position: sticky property works when the element is a child of a scrolling container. If your nav is directly inside the body element, it may not have a parent that is a scrolling container, and therefore position: sticky might not produce the desired effect.
+
+In the case where you applied position: sticky to the header and it worked, it's likely because the header element is acting as a scrolling container.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name"discription" content="This is simple layout of website">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Layout</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+
+    <main>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box3">Welcome to my My web . i used HTML and CSS to build this Layout</div>
+    </main>
+
+
+    <footer>
+        <div class="footer"></div>
+        <div class="circle"></div>
+    </footer>
+
+</body>
+
+</html>

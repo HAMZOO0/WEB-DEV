@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+nav {
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(165, 103, 27);
+    position: fixed;
+    z-index: 1;
+
+}
+
+/* header{
+    position: sticky;
+    top: 40px;
+    z-index: 1;
+
+      how much i put px here on top otna he distence sy stick ho ga box  
+} */
+
+main {
+    width: 94vw;
+    height: 82vh;
+    margin: 0px;
+    background-color: rgb(4, 57, 51);
+    position: relative;
+    top: 75px;
+    left: 38px;
+
+}
+
+.box {
+    background-color: rgb(236, 244, 19);
+    width: 506px;
+    height: 375px;
+    position: relative;
+}
+
+.box1 {
+    top: 40px;
+    left: 34px;
+}
+
+.box2 {
+    bottom: 337px;
+    left: 653px;
+
+}
+
+.box3 {
+    position: relative;
+    width: 54vw;
+    height: 10vh;
+
+    bottom: 268px;
+    left: 243px;
+
+    background-color: aqua;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+
+.footer {
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(214, 15, 198);
+    position: relative;
+    top: 187px;
+
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    /* border: solid 1px;   */
+    border-radius: 50%;
+    background-color: rgb(13, 254, 53);
+    position: fixed;
+    top: 500px;
+    left: 1200px;
+}
