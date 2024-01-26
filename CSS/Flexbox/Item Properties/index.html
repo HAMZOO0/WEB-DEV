@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flexbox </title>
+    <style>
+        /* 
+
+        order 
+        gitna zeada order otna he end pr item aye ga  
+        by default order is 1 
+
+
+        *****************************************************8
+
+        flex grow  b default is 0 here we add 1 so when we use flex grow 1 then each elemnt take spaec of 2 boxes 3 for 3 so on  . 
+
+                *****************************************************8
+            flex-shrink: 10; a item shrink 10 time  faster then other when we change the layout 
+
+            **************************************************************8
+                    align-self: flex-end;
+use to apply the  aleen-item property on single item
+
+ */
+
+        .contaner {
+            border: 2px solid rgb(0, 0, 0);
+            height: 500px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+        .box {
+            flex-grow: 1;
+
+            width: 30px;
+            height: 30px;
+            background-color: rgba(118, 238, 226, 0.63);
+            border: 2px solid red;
+            margin: 2px;
+        }
+
+        .order1 {
+            flex-grow: 10;
+            order: 1;
+        }
+
+        .order2 {
+            order: 2;
+
+            flex-shrink: 10;
+        }
+
+        .box8 {
+
+            align-self: flex-end;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="contaner">
+            <div class="box"> 1</div>
+            <div class="box order1">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box ">6</div>
+            <div class="box order2">7</div>
+            <div class="box box8">8</div>
+        </div>
+    </main>
+
+</body>
+
+</html>

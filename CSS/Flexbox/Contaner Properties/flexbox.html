@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flexbox </title>
+    <style>
+        /* This property will apply on parent element .
+we use flex for make all the child box inline .
+we use to make elements in center
+
+*********************************************************************************
+
+justify-content: center; this is for x-axis 
+
+align-items: center; this is for y-axis
+
+********************************************************************************
+
+we use flex dirextion to show the box/elements so we also chenge it 
+
+like we want to show boxes in line --> inline then we use row (when we use display:flex then this property is by-defult )
+lex-direction: row
+
+for  colom we use  then elements will show vertically 
+flex-direction:colom
+
+by using   flex-direction: row-reverse;  amd   flex-direction: colom-reverse ;
+we reverse the order of these 
+
+***************************************************************
+
+we use           align-content: center;
+ for make center a boxes when the number of boxes are more then one row 
+
+ *************************************************************************8
+
+ 
+            gap:20px;  
+             is also like a margin  
+
+ */
+
+        .contaner {
+            border: 2px solid rgb(0, 0, 0);
+            height: 500px;
+
+            display: flex;
+
+            /* justify-content: space-evenly;  
+            use to give space between them */
+
+            /* justify-content: baseline; 
+            it make the center of all boxes in same line (if boxes are un-evenly then it just sort them in line )
+            
+            
+            
+            */
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-direction: column;
+
+
+        }
+
+        .box {
+            width: 30px;
+            height: 30px;
+            background-color: rgba(118, 238, 226, 0.63);
+            border: 2px solid red;
+            margin: 2px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="contaner">
+            <div class="box"> 1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+        </div>
+    </main>
+
+</body>
+
+</html>
