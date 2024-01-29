@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .contaner {
+            border: 2px solid rgb(0, 0, 0);
+            height: 300px;
+            width: 100vw;
+
+            display: grid;
+ 
+            /*
+             grid-template-columns: repeat(4 , 1fr); 
+              repeat 1f  for four time  */
+
+            grid-template-columns: minmax(100px , 10px);
+            /* here we set the min and max length of column  */
+
+
+
+            grid-template-rows:
+                40px 50px;
+
+/* justify-items: center;        */
+align-items: center;
+align-content: center;
+       /*  it use to center the whole grid or we say this property will apply on whole grid  */
+
+
+
+        }
+
+        .box {
+            width: 30px;
+            height: 30px;
+            background-color: rgba(118, 238, 226, 0.63);
+            border: 2px solid red;
+
+
+        }
+
+        .box3 {
+
+
+
+            grid-column: phla/tesra;
+
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="contaner">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box box3">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+            <div class="box">13</div>
+            <div class="box">14</div>
+            <div class="box">15</div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        /* 
+ grid-template-areas:
+                "nav nav nav"
+                "side artical artical"
+                "footer footer footer";
+The grid-template-areas property in CSS Grid defines named grid areas within the grid container. It's a way to visually represent the layout of the grid by assigning names to different sections or cells of the grid.
+
+The first row: "nav nav nav". This indicates that the first row consists of three grid areas, each named "nav". So, horizontally, there are three "nav" areas.
+
+The second row: "side artical artical". This indicates that the second row consists of three grid areas, with the first named "side" and the next two named "artical". This defines the side and article sections.
+
+The third row: "footer footer footer". This indicates that the third row consists of three grid areas, all named "footer".
+
+*/
+        .contaner {
+            border: 2px solid rgb(0, 0, 0);
+            height: 300px;
+            
+            background-color: blanchedalmond;
+
+            display: grid;
+
+            grid-template-areas:
+                "nav nav nav"
+                "side artical artical"
+                "footer footer footer";
+
+
+            grid-template-columns:
+                [phla]300px [dosra]700px;
+            grid-template-rows:
+                100px 150px;
+
+            gap: 10px;
+        }
+
+
+        .box {
+            height: 40px;
+            background-color: rgba(118, 238, 226, 0.63);
+            border: 2px solid red;
+
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+        }
+
+        .box1 {
+            grid-area: nav;
+            text-align: center;
+
+        }
+
+        .box2 {
+            grid-area: side;
+            text-align: center;
+            height: 100px;
+        }
+
+        .box3 {
+            grid-area: artical;
+            text-align: center;
+            height: 100px;
+        }
+
+        .box4 {
+            text-align: center;
+            grid-area: footer;
+        }
+    </style>
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="contaner">
+            <div class="box  box1">
+                <h3>Header</h3>
+            </div>
+            <div class="box box2">
+                <h3>side</h3>
+            </div>
+            <div class="box box3">
+                <h3>artical</h3>
+            </div>
+            <div class="box box4">
+                <h3>Footer</h3>
+            </div>
+
+
+    </main>
+
+</body>
+
+</html>
