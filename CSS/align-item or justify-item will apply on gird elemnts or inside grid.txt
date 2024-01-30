@@ -1,0 +1,5 @@
+justfy item will not work on flexbox  
+just concet will work brz we move whole gird into center 
+
+alien item center work bcz we put item on center 
+alien coientenc center in flex box then we have lots of box inside contaner when we use wrap then alin content center  then it work or we say that it wirks with wrap 
