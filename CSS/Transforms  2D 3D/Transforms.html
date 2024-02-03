@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms </title>
+    <style>
+        .contaner {
+            width: 50vw;
+            height: 80vh;
+            background-color: antiquewhite;
+            border: 4px solid rgb(0, 0, 0);
+
+        }
+
+        /* 
+
+        The transform CSS property lets you rotate, scale, skew, or translate an element. 
+    **********************************************************************************************
+
+
+    transform: rotate(0.2turn);
+    use to rotate , two units turnn and  deg 
+
+    and we alsu use rotateY(50deg); |  rotateX(deg); 
+    to rotate on x-y axis
+
+    **********************************************************************************************
+
+                transform: scale(2);
+ use to scale or make it bigger 
+
+
+ ***************************************************************************************
+             transform: translate(100px);
+
+             it move to X-Y axis             transform: translateY(10px);
+ same as  postion relative 
+
+ ****************************************************************8
+    transform: translateX(-30px) skew(10deg) translateY(100px);
+
+    this is how we use multipal properties 
+
+    ************************************************************
+ transform:rotate(10deg);
+        transform-origin: 0% ;
+
+        here we change the orgina or the center point of rotation  b y using tranfor-origin
+
+        
+        */
+        .box {
+            width: 10vw;
+            height: 10vh;
+            background-color: aqua;
+            border: 2px solid red;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* transform: rotate(0.2turn); */
+            /* transform: rotateY(50deg); */
+            /* transform: rotateX(deg); */
+            /* transform: rotate(0deg); */
+
+            /* transform: scale(); */
+
+            /* transform: skew(0deg); */
+            /* transform: skewX(0deg); */
+
+            /* transform: translateY(10px);*/
+
+
+            /* transform: translateX(-30px) skew(10deg) translateY(100px); */
+
+            transform: rotate(10deg);
+            transform-origin: 0%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contaner">
+        <div class="box box1">
+            box
+        </div>
+    </div>
+
+</body>
+
+</html>
