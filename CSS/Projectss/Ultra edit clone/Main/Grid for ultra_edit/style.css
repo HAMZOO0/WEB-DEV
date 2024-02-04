@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}    
+
+/*header +  nav bar  */
+
+ul {
+    font-size: large;
+    list-style-type: none;
+    display: flex;
+
+    justify-content: center;
+    padding-right: 90px;
+    padding-top:  30px;
+
+    column-gap: 40px;
+
+}
+
+.logo {
+
+    margin-right: auto;
+    padding-top: 10px;
+    padding-left: 70px;
+}
+
+.no-img {
+    column-gap: 10px;
+
+}
+
+.main_para{
+    padding-top: 60px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sub_para{
+    padding-top: 60px;
+     text-align:center;
+     font-size: 30px;
+     padding-bottom: 60px;
+
+
+}
+
+
+.download_button{
+
+    display: block;
+    margin: auto;
+    
+    height: 41px;
+    padding: 10px;
+    background-color: #00b6d1;
+    color: white;
+    border: 0px  ;
+    border-radius: 5px;
+    /* block-size: 1000px; */
+}
+
+/*Body or  main   */
+
+strong {
+    font-size: large;
+    margin: 30px;
+}    
+
+.main {
+    width: 100vw;
+    height: 100vh;
+
+    margin-top: 40px ;
+    display: grid;
+    grid-template-columns: 266px 266px 266px;
+    grid-template-rows: 201px 201px 201px;
+
+    justify-content: center;
+
+    column-gap: 80px;
+     
+
+}    
+
+
+
+
+.box {
+    width: 23vw;
+    height: 28vh;
+    
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}    
+
+/* main_button_contaner is a citaner or div where i created a two buttons   */
+.main_button_contaner {
+    padding: 20px;
+}    
+
+/* .button class have two button  combine properties  */
+.button {
+    padding: 8px;
+    border: 0px;
+    border-radius: 5px;
+    color:white;
+    font-weight:bolder
+}    
+
+.button1 {
+    background-color: #00b6d1;
+}    
+
+.button2 {
+    background-color: #5cb85c;
+}    
+
+
