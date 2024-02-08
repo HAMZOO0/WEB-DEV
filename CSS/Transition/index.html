@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <!-- transiiton meanting sshifting form one state to other very smooothly  -->
+    <!-- transiiton meanting sshifting form one state to other very smooothly  -->
     <style>
- .contaner{
-    background-color: bisque;
-    width: 50vw;
-    height: 50vh;    
- }
- .box{
-    background-color: rgb(27, 221, 228);
-    width: 10vw;
-    height: 5vh;
+        .contaner {
+            background-color: bisque;
+            width: 50vw;
+            height: 50vh;
+        }
 
-    /* transition-property: background-color,wdit ,height ; */
-    transition-property: all ;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 2s;
- }
- /* .translate{
+        .box {
+            background-color: rgb(27, 221, 228);
+            width: 10vw;
+            height: 15vh;
+
+            /* transition-property: background-color,wdit ,height ; */
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+            
+        }
+
+        /* .translate{
     transform: translatex(10vw) translateY(10vh);
     background-color: black;
 /* we cover tranform it just change the location of box */
- /* }  */
+        /* }  */
 
- .box:hover{
-    background-color: rgb(216, 130, 0);
-    width: 40vw;
-    height: 40vh;
- }
+        .box:hover {
+            background-color: rgb(216, 130, 0);
+            width: 20vw;
+            height: 10vh;
+            transform: rotate(180deg)
+        }
     </style>
 </head>
+
 <body>
     <div class="contaner">
         <div class="box translate">
 
         </div>
     </div>
-    
+
 </body>
+
 </html>
