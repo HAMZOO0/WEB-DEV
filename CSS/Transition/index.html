@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- transiiton meanting sshifting form one state to other very smooothly  -->
+     <!-- transiiton meanting sshifting form one state to other very smooothly  -->
     <style>
  .contaner{
     background-color: bisque;
@@ -16,13 +16,22 @@
     width: 10vw;
     height: 5vh;
 
-    transition-property: transform;transition-duration: 2s;
+    /* transition-property: background-color,wdit ,height ; */
+    transition-property: all ;
+    transition-duration: 1s;
     transition-timing-function: ease-in-out;
     transition-delay: 2s;
  }
- .translate{
+ /* .translate{
     transform: translatex(10vw) translateY(10vh);
+    background-color: black;
 /* we cover tranform it just change the location of box */
+ /* }  */
+
+ .box:hover{
+    background-color: rgb(216, 130, 0);
+    width: 40vw;
+    height: 40vh;
  }
     </style>
 </head>
