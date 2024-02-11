@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .contaner {
+            background-color: bisque;
+            width: 50vw;
+            height: 50vh;
+        }
+
+        .box1 {
+            background-color: rgb(27, 221, 228);
+            width: 10vw;
+            height: 5vh;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; 
+
+             animation-name: translate_animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+
+animation-direction:alternate; 
+animation-play-state: paused; */
+
+            animation: translate_animation 2s ease-in 0s infinite reverse;
+        }
+
+        .box2 {
+            background-color: rgb(27, 221, 228);
+            width: 10vw;
+            height: 5vh;
+            margin-top: 122px;
+
+            animation-name: width_animation;
+            animation-duration: 3s;
+            /* animation-iteration-count: infinite; */
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-direction: alternate;
+
+            animation-fill-mode: both;
+            /* animation-fill-mode property in CSS is used to specify how the styles are applied to an element before and after the animation
+            animation-fill-mode: none;: This is the default value. It means that the element will not retain any styles from the animation before or after it runs.
+
+animation-fill-mode: forwards;: This value instructs the element to retain the styles applied to it by the last keyframe after the animation completes.
+
+animation-fill-mode: backwards;: This value makes the element apply the styles of the first keyframe before the animation starts. So, the element will appear as if it's already been animated to the initial keyframe position even before the animation begins.
+
+animation-fill-mode: both;: This value combines the behaviors of both forwards and backwards, meaning that the styles from both the first and last keyframes will be applied, before and after the animation, respectively. */
+
+        }
+
+
+        .battery {
+            width: 10vw;
+            height: 4vh;
+            background-color: rgba(0, 0, 0, 0.137);
+            animation: percentage 3s infinite ;
+        }
+
+        @keyframes translate_animation {
+            from {}
+
+            to {
+                transform: translateX(100px);
+                background-color: black;
+            }
+        }
+
+        @keyframes width_animation {
+            from {
+                background-color: rgb(36, 169, 29);
+            }
+
+            to {
+                width: 10px;
+                background-color: red;
+            }
+        }
+
+        @keyframes percentage {
+            0% {
+                width: 1vh;
+                background-color: red;
+            }
+
+            40% {
+                width: 3vh;
+                background-color: rgba(255, 0, 0, 0.292);
+            }
+
+
+            60% {
+                width: 5vh;
+                background-color: rgba(223, 230, 24, 0.749);
+
+            }
+
+            80% {
+                 width: 7vh;
+                background-color: rgba(27, 103, 17, 0.699);
+
+            }
+
+            99% {
+                width: 10vh;
+                background-color: rgba(56, 225, 13, 0.918);
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contaner">
+        <div class="box1 translate"></div>
+
+        <div class="box2"></div>
+    </div>
+
+    <div class="battery"></div>
+    </div>
+</body>
+
+</html>
