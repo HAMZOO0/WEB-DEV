@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  
+         width: 200px;
+            height: 200px;
+            object-fit: cover;
+
+        it means we cover the  wdith of 200px ans height of 200px means we cover the this box not contaner , and also mantant the aspect ratio - simplay we say it cut the other part of phtoto to adjust your give wdith and height 
+         */
+        .contaner {
+            height: 200px;
+            width: 300px;
+            /* background-color: antiquewhite; */
+            border: 2px solid black;
+            background-image: url(data:image/jpeg;base64,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);
+        }
+
+        img {
+            height: 200px;
+            width: 300px;
+
+
+            /* object-fit: cover; */
+            /*  abject cover the  give wdith and hegiht it will not care about its parent width and height 
+            -------------------------------------------------------------------------------------       */
+
+            object-fit: cover;
+            /* object-position: bottom left; */
+            object-position: 5px -13px ;
+            /* here we choose with part of pic we want to show  */
+
+
+            /* object-fit:contain; */
+            /* it contan the whole pic but it look not cool when our background box will also appear blank  */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contaner"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsDGz-gZFE8Rp9tqTUHhMjltn_5VwPoo8UfQ&usqp=CAU"
+            alt=""></div>
+</body>
+
+</html>
