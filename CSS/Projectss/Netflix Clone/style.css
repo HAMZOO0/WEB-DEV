@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    height: 664px;
+    background-image: url(Assets/img/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    position: relative;
+
+}
+
+.box {
+    height: 670px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+
+}
+
+nav {
+    max-width: 95vw;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    position: relative;
+    z-index: 1;
+    /*  here we done this we want to remove optacity  */
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    color: white;
+    height: calc(100% - 100px);
+    /* here we remove the nav size : like it has same size of it parent   */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 23px;
+    padding: 0px 30px;
+
+    text-align: center;
+}
+
+/* hero ma phla first child  */
+.hero> :first-child {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero>:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.hero>:nth-child(3) {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.seperator {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.hero_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+button {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: rgb(229 9 20);
+    color: white;
+}
+
+.sign_in {
+    margin-right: 19px;
+    padding: 10px 20px 9px 17px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.get_Stat {
+    padding: 14px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+
+}
+
+.main input {
+    padding: 18px 160px 17px 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    border: 1px solid rgb(96 96 96);
+    background-color: rgb(23, 23, 23, 0.8);
+    color: white;
+    /* background: transparent; */
+}
+
+.main input::placeholder {
+    color: #bababa;
+}
+
+/*  */
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+
+
+}
+
+.sec_img {
+    position: relative;
+
+}
+
+.sec_img img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.sec_img video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+/* video {
+    position: absolute;
+    top: 771px;
+    left: 644px;
+    width: 465px;
+    z-index: -1;
+} */
+
+.third {
+    height: 400px;
+    padding-left: 168px;
+}
+
+.faq {
+    color: white;
+    padding: 32px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.faq_box {
+    display: flex;
+    background-color: #2d2d2d;
+    align-items: end;
+    padding: 23px;
+    margin: 14px auto;
+    max-width: 89vw;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+.faq_box:hover {
+    /* background-color: #414040; */
+    animation-name: translate_animation;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+/* here i am adding some animation of FAQ box when we hover on it then it change its background color   */
+@keyframes translate_animation {
+    from {}
+
+    to {
+        background-color: #414141;
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 90vw;
+    color: white;
+    margin: auto;
+    padding: 40px;
+}
+
+.item_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #b3b3b3;
+    font-size: 14px;
+
+}
+
+@media only screen and (max-width:800px) {
+    .main {
+        width: 140vw;
+    }
+}
