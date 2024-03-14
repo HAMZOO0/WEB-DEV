@@ -1,3 +1,5 @@
+
+
 var a = prompt("Enter 1st number ")
 var b = prompt("Enter 2nd number ") 
 
@@ -9,6 +11,7 @@ if( check>10){
 if(c == '+')
 {
     console.log(a-b)
+
 }
 
 else if (c == '-')
@@ -27,24 +30,8 @@ else if (c == '/')
 }
 
 else{
+    // console.log(`the result is ${(`${a} ${c} ${b}`)}`);
+    alert(`the result is ${eval(`${a} ${c} ${b}`)}`);
 
-    if(c == '+')
-    {
-        console.log(a+b)
-    }
-    
-    else if (c == '-')
-    {
-        console.log(a-b)
-    }
-    
-    else if (c == '*')
-    {
-        console.log(a*b)
-    }
-    else if (c == '/')
-    {
-        console.log(a/b)
-    }
 }
 
