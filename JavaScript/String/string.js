@@ -3,6 +3,8 @@ let a = "abcda!";
 // This is how we access specific element 
 // console.log(a[0]);
 // console.log(a.charAt(5));
+a.indexOf('a');
+
 
 // console.log( a.toUpperCase()); uppcase convert
 
